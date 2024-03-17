@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent scrollbar on the whole page */
+}
+.header {
+  height: 5em;
+  border-bottom: 0.2px solid #e5e7eb;
+}
+/* .header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Adjust thickness of "border" as needed */
+/* background-color: black; Color of the "border" */
+/* }  */
+.calendarLogo {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative; /* Ensure parent div has relative positioning */
+}
+.topRightCorner {
+  width: 0.5rem; /* Adjust as needed */
+  height: 0.5rem; /* Adjust as needed */
+  background-color: #1967d2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-right-radius: 25%;
+  z-index: 1;
+}
+.bottomLeftCorner {
+  width: 0.5rem; /* Adjust as needed */
+  height: 0.5rem; /* Adjust as needed */
+  background-color: #188038;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 25%;
+  z-index: 1;
+}
+.bottomRightCorner {
+  width: 0; /* Adjust as needed */
+  height: 0; /* Adjust as needed */
+  border-top: 0.5rem solid #f72a25; /* Red color */
+  border-right: 0.5rem solid transparent; /* Transparent to create triangle */
+  background-color: white; /* White color for the other half */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.innerSpace {
+  width: calc(100% - 4px); /* Adjusted width considering border */
+  height: calc(100% - 4px); /* Adjusted height considering border */
+  background-color: white; /* White space */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center; /* Vertically center the content */
+  justify-content: center;
+}
+
+.calendarLogo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-left: 8px solid #4285f4; /* Left border blue*/
+  border-top: 8px solid #4285f4; /* Top border blue */
+  border-right: 8px solid #fbbc04; /* Right border yellow */
+  border-bottom: 8px solid #34a853; /* Bottom border green */
+  box-sizing: border-box;
+  border-radius: 7%;
+}
+
+.calendarName {
+  font-size: x-large;
+  color: #3c4043;
+  margin-left: 1rem;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+}
+.buttonToday {
+  width: 4.5rem;
+  height: 2.5rem;
+  margin-left: 2rem;
+  border: 0.5px;
+  border-style: solid;
+  border-color: #dadce0;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Roboto, Helvetica, Arial, sans-serif";
+  color: #3c4043;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.arrow {
+  margin-left: 3rem;
+  color: #6d7075;
+}
+
+.day {
+  color: #4285f4;
+  font-weight: 700;
+}
+.todayDate {
+  background-color: rgb(37 99 235);
+  color: #ffff;
+}
+.calendarBorder {
+  border-color: rgb(226 232 240);
+}
+.monthText {
+  color: rgb(107 114 128);
+}
+
+.border {
+  border-color: rgb(226 232 240);
+}
+.calendarDiv {
+  height: 90%;
+}
+.selectDate {
+  background-color: rgb(219 234 254);
+  color: rgb(37 99 235);
+}
+
+.eventHead {
+  background-color: rgb(243 244 246);
+}
+.text-gray-400 {
+  color: rgb(156 163 175);
+}
+.borderColorBlue500:focus{
+  border-color: #3b84f6;
+  color: #3c4043;
+}
+.borderColorGray200 {
+  border-color: #e1e5ea;
+}
+
+.btn{
+  background-color: #1967d2;
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: white;
+}
